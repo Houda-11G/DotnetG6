@@ -1,0 +1,78 @@
+﻿@model partieWebGDHotel.Models.Client
+@{
+    ViewData["Title"] = "Créer un compte";
+}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-hotel {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-hotel">
+    <!-- Header avec effet de verre -->
+    <div class="backdrop-blur-sm bg-white/30 p-6 fixed w-full top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-serif text-indigo-800">Hôtel Luxe</div>
+        </nav>
+    </div>
+
+    <main class="container mx-auto px-4 pt-32 pb-16">
+        <div class="relative bg-white/40 backdrop-blur-md rounded-3xl shadow-2xl p-8 sm:p-12 mt-12 max-w-2xl mx-auto">
+            <!-- Cercles décoratifs -->
+            <div class="absolute -top-20 -left-20 w-40 h-40 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+            <div class="absolute -bottom-20 -right-20 w-40 h-40 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+
+            <div class="relative">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-8">
+                    Créer un compte
+                </h2>
+
+                <form asp-action="Register" method="post" class="space-y-6">
+                    <div class="space-y-2">
+                        <label for="Nom" class="block text-gray-700 font-medium">Nom</label>
+                        <input asp-for="Nom" class="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all" placeholder="Entrez votre nom" />
+                        <span asp-validation-for="Nom" class="text-red-500 text-sm"></span>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label for="Prenom" class="block text-gray-700 font-medium">Prénom</label>
+                        <input asp-for="Prenom" class="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all" placeholder="Entrez votre prénom" />
+                        <span asp-validation-for="Prenom" class="text-red-500 text-sm"></span>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label asp-for="email" class="block text-gray-700 font-medium">Email</label>
+                        <input asp-for="email" class="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all" placeholder="Entrez votre email" />
+                        <span asp-validation-for="email" class="text-red-500 text-sm"></span>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label asp-for="mot_de_passe" class="block text-gray-700 font-medium">Mot de passe</label>
+                        <input asp-for="mot_de_passe" type="password" class="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all" placeholder="Entrez un mot de passe" />
+                        <span asp-validation-for="mot_de_passe" class="text-red-500 text-sm"></span>
+                    </div>
+
+                    <button type="submit" class="w-full px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-xl hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-150">
+                        S'inscrire
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "GestionDHotel", "GestionDHotel.exe", "{2CF7876C-6DE3-45E3-8E36-98EF68889404}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = C:\Users\PC\source\repos\GestionDHotel\GestionDHotel\obj\Debug\GestionDHotel.exe
+		RemoteMachine = DESKTOP-VKIN8V0
+		StartingDirectory = C:\Users\PC\source\repos\GestionDHotel\GestionDHotel\obj\Debug
+		Environment = Par défaut
+		LaunchingEngine = 00000000-0000-0000-0000-000000000000
+		UseLegacyDebugEngines = No
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+		IORedirection = Auto
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CF7876C-6DE3-45E3-8E36-98EF68889404}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC1AA881-688E-468C-A0BC-80588080AA97}
+	EndGlobalSection
+EndGlobal

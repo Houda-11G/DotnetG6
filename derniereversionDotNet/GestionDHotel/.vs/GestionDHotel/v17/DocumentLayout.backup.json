@@ -1,0 +1,208 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\Notif.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GestionDHotel\\Notif.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\Notif.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GestionDHotel\\Notif.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\System.Net.Mail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GestionDHotel\\System.Net.Mail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\PhotoUrlConverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GestionDHotel\\PhotoUrlConverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\Menu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GestionDHotel\\Menu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\Menu.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GestionDHotel\\Menu.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\obj\\Debug\\Notif.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GestionDHotel\\obj\\Debug\\Notif.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\Chambre.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GestionDHotel\\Chambre.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\Chambre.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GestionDHotel\\Chambre.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 386,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Notif.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\Notif.xaml.cs",
+              "RelativeDocumentMoniker": "GestionDHotel\\Notif.xaml.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\Notif.xaml.cs",
+              "RelativeToolTip": "GestionDHotel\\Notif.xaml.cs",
+              "ViewState": "AgIAAC8BAAAAAAAAAAAiwEsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T15:04:41.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "System.Net.Mail.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\System.Net.Mail.cs",
+              "RelativeDocumentMoniker": "GestionDHotel\\System.Net.Mail.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\System.Net.Mail.cs",
+              "RelativeToolTip": "GestionDHotel\\System.Net.Mail.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwA0AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T15:18:30.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Notif.xaml",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\Notif.xaml",
+              "RelativeDocumentMoniker": "GestionDHotel\\Notif.xaml",
+              "ToolTip": "C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\Notif.xaml",
+              "RelativeToolTip": "GestionDHotel\\Notif.xaml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAkwCQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-01T15:04:35.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PhotoUrlConverter.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\PhotoUrlConverter.cs",
+              "RelativeDocumentMoniker": "GestionDHotel\\PhotoUrlConverter.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\PhotoUrlConverter.cs",
+              "RelativeToolTip": "GestionDHotel\\PhotoUrlConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T09:44:29.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Menu.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\Menu.xaml.cs",
+              "RelativeDocumentMoniker": "GestionDHotel\\Menu.xaml.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\Menu.xaml.cs",
+              "RelativeToolTip": "GestionDHotel\\Menu.xaml.cs",
+              "ViewState": "AgIAAP4BAAAAAAAAAAAswBUCAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T09:42:30.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Menu.xaml",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\Menu.xaml",
+              "RelativeDocumentMoniker": "GestionDHotel\\Menu.xaml",
+              "ToolTip": "C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\Menu.xaml",
+              "RelativeToolTip": "GestionDHotel\\Menu.xaml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAwDkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-02T09:42:09.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Chambre.xaml",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\Chambre.xaml",
+              "RelativeDocumentMoniker": "GestionDHotel\\Chambre.xaml",
+              "ToolTip": "C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\Chambre.xaml",
+              "RelativeToolTip": "GestionDHotel\\Chambre.xaml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-02T09:08:58.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Chambre.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\Chambre.xaml.cs",
+              "RelativeDocumentMoniker": "GestionDHotel\\Chambre.xaml.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\Chambre.xaml.cs",
+              "RelativeToolTip": "GestionDHotel\\Chambre.xaml.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAQwFoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T21:46:57.883Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 31,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Notif.g.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\obj\\Debug\\Notif.g.cs",
+              "RelativeDocumentMoniker": "GestionDHotel\\obj\\Debug\\Notif.g.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\4emmeannee\\Dot net\\prjt dotnet\\GestionDHotel\\GestionDHotel\\obj\\Debug\\Notif.g.cs",
+              "RelativeToolTip": "GestionDHotel\\obj\\Debug\\Notif.g.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T10:31:59.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 69,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

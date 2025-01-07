@@ -1,0 +1,165 @@
+﻿@model IEnumerable<Reservation>
+
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mes Réservations</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+    </head>
+    <body class="min-h-screen bg-gradient-to-br from-blue-100 via-white to-purple-100">
+        <!-- Header -->
+
+        <div class="backdrop-blur-sm bg-white/30 p-6 fixed w-full top-0 z-50">
+            <nav class="container mx-auto flex justify-between items-center">
+                <div class="text-2xl font-serif text-indigo-800"  >Hôtel Luxe</div>
+
+
+                <div class="relative group">
+                    <button class="flex items-center gap-2 px-4 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                        </svg>
+                        <span></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                </div>
+
+            </nav>
+        </div>
+
+        <main class="container mx-auto px-4 pt-24 pb-16">
+            <div class="glass-effect rounded-xl shadow-lg overflow-hidden">
+                <div class="p-6 bg-gradient-to-r from-indigo-600 to-purple-600">
+                    <h1 class="text-2xl font-bold text-white">Mes Réservations</h1>
+                </div>
+
+                <div class="p-6 bg-white/40 backdrop-blur-md">
+                    @if (Model != null && Model.Any())
+                {
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead>
+                                <tr class="bg-gray-50 border-b border-gray-200">
+                                    <th class="px-6 py-3 text-left text-sm font-semibold text-gray-700">Numéro de Chambre</th>
+                                    <th class="px-6 py-3 text-left text-sm font-semibold text-gray-700">Date de Début</th>
+                                    <th class="px-6 py-3 text-left text-sm font-semibold text-gray-700">Date de Fin</th>
+                                    <th class="px-6 py-3 text-left text-sm font-semibold text-gray-700">Prix Total</th>
+                                    <th class="px-6 py-3 text-left text-sm font-semibold text-gray-700">Statut</th>
+                                    <th class="px-6 py-3 text-left text-sm font-semibold text-gray-700">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                @foreach (var reservation in Model)
+                                {
+                                <tr class="hover:bg-gray-50/50 transition-colors">
+                                    <td class="px-6 py-4 text-sm text-gray-700">@reservation.NumChambre</td>
+                                    <td class="px-6 py-4 text-sm text-gray-700">
+                                        @if (reservation.DateDebut.HasValue)
+                                            {
+                                        @reservation.DateDebut.Value.ToString("dd/MM/yyyy")
+                                            }
+                                            else
+                                            {
+                                        <span class="text-gray-400">Non spécifié</span>
+                                            }
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-gray-700">
+                                        @if (reservation.DateFin.HasValue)
+                                            {
+                                        @reservation.DateFin.Value.ToString("dd/MM/yyyy")
+                                            }
+                                            else
+                                            {
+                                        <span class="text-gray-400">Non spécifié</span>
+                                            }
+                                    </td>
+                                    <td class="px-6 py-4 text-sm font-medium text-gray-900">@reservation.Prix €</td>
+                                    <td class="px-6 py-4">
+                                        <span class="px-3 py-1 text-xs font-medium rounded-full
+                                                @(reservation.Statut == "Confirmé" ? "bg-green-100 text-green-800" :
+                                                reservation.Statut == "En attente" ? "bg-yellow-100 text-yellow-800" :
+                                                "bg-gray-100 text-gray-800")">
+                                            @reservation.Statut
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        <button onclick="generateReceipt(
+                                                    @reservation.ID_Reservation,
+                                                    '@reservation.NumChambre',
+                                                    '@reservation.DateDebut',
+                                                    '@reservation.DateFin',
+                                                    @reservation.Prix
+                                                  
+                                                )"
+                                                class="inline-flex items-center px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium rounded-lg transition-colors">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                            </svg>
+                                            Télécharger Reçu
+                                        </button>
+                                    </td>
+                                </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else
+                {
+                    <div class="text-center py-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                        <p class="mt-4 text-lg text-gray-600">Aucune réservation trouvée.</p>
+                    </div>
+                }
+                </div>
+            </div>
+        </main>
+
+        <style>
+            .glass-effect {
+                backdrop-filter: blur(12px);
+                background: rgba(255, 255, 255, 0.4);
+            }
+        </style>
+        <script>
+            function generateReceipt(id, numChambre, dateDebut, dateFin, prix, statut) {
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF();
+
+                // En-tête du reçu
+                doc.setFontSize(18);
+                doc.text('Reçu de Réservation', 70, 20);
+
+                // Ligne séparatrice
+                doc.setLineWidth(0.5);
+                doc.line(10, 25, 200, 25);
+
+                // Informations de la réservation
+                doc.setFontSize(12);
+                doc.text(`Numéro de réservation : ${id}`, 10, 40);
+                doc.text(`Numéro de chambre : ${numChambre}`, 10, 50);
+                doc.text(`Date de début : ${dateDebut || "Non spécifié"}`, 10, 60);
+                doc.text(`Date de fin : ${dateFin || "Non spécifié"}`, 10, 70);
+                doc.text(`Prix total : ${prix} €`, 10, 80);
+                
+
+                // Pied de page
+                doc.setFontSize(10);
+                doc.text('Merci pour votre réservation !', 10, 120);
+                doc.text('Pour toute question, contactez notre service client.', 10, 130);
+
+                // Télécharger le PDF
+                doc.save(`Recu_Reservation_${id}.pdf`);
+            }
+        </script>
+
+    </body>
+</html>

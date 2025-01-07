@@ -1,0 +1,10 @@
+﻿<Window x:Class="GestionDHotel.UploadReceiptWindow"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       Title="Upload Receipt" Height="350" Width="525">
+    <Grid>
+        <TextBox x:Name="FilePathTextBox" Width="200" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="Parcourir" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BrowseButton_Click"/>
+        <Button Content="Envoyer" Width="100" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top" Click="UploadButton_Click"/>
+    </Grid>
+</Window>

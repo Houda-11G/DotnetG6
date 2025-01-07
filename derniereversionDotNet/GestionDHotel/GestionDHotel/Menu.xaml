@@ -1,0 +1,66 @@
+﻿<Window x:Class="GestionDHotel.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Menu Principal" Height="600" Width="800"
+        Closing="Window_Closing">
+    <DockPanel>
+        <!-- Zone du menu en haut -->
+        <ToolBar DockPanel.Dock="Top" Background="LightGray" Height="50">
+            <Button Content="Gestion des Chambres" Width="150" Height="40" Margin="10" Click="GestionChambres_Click" />
+            <Button Content="Liste des Employés" Width="150" Height="40" Margin="10" Click="ListeEmpl_Click"/>
+            <Button Content="Mise à jour des données Empl" Width="150" Height="40" Margin="10" Click="UpdateDatabase_Click"/>
+            <Button x:Name="NotificationIcon" Width="40" Height="40" Margin="10" Click="NotificationIcon_Click">
+                <Image Source="notification_icon.png" Width="20" Height="20" ToolTip="Nouvelles réservations!" />
+            </Button>
+        </ToolBar>
+
+        <!-- Zone de contenu principal (centre de la fenêtre) -->
+        <Grid Margin="10">
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- ComboBox pour sélectionner le type de chambre -->
+                <ComboBox x:Name="TypeChambreComboBox" 
+                      HorizontalAlignment="Center" 
+                      Width="200" 
+                      SelectionChanged="TypeChambreComboBox_SelectionChanged">          
+                    <ComboBoxItem Content="Single" />
+                    <ComboBoxItem Content="Double" />
+                    <ComboBoxItem Content="Suite" />
+                    <ComboBoxItem Content="Deluxe" />
+                </ComboBox>
+
+                <!-- DataGrid pour afficher les chambres -->
+                <DataGrid x:Name="ChambresDataGrid" AutoGenerateColumns="False" HorizontalAlignment="Stretch" Height="300" VerticalAlignment="Top" Margin="0,50,0,0" Grid.Row="1" Grid.Column="0">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Numéro" Binding="{Binding NumChambre}" />
+                            <DataGridTextColumn Header="Type" Binding="{Binding TypeChambre}" />
+                            <DataGridTextColumn Header="Capacité" Binding="{Binding Capacite}" />
+                            <DataGridTextColumn Header="Prix" Binding="{Binding PrixParNuit}" />
+                            <DataGridTextColumn Header="Description" Binding="{Binding Description}" />
+                            <DataGridTextColumn Header="Étage" Binding="{Binding Etage}" />
+                            <DataGridTextColumn Header="Statut" Binding="{Binding Statut}" />
+                            <DataGridTemplateColumn Header="Image">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Image Source="{Binding Image}" Width="100" Height="100" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+
+            </Grid>
+            <Button Content="+" HorizontalAlignment="Left" Margin="121,77,0,0" VerticalAlignment="Top" Click="Button_Click" Background="#FF3D8F0E" Height="31" Width="69" FontWeight="Bold" FontSize="20" FontFamily="Arial Rounded MT Bold"/>
+        </Grid>
+    </DockPanel>
+</Window>

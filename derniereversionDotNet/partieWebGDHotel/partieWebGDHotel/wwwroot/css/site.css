@@ -1,0 +1,100 @@
+/* Assurez-vous que la carte prend toute la hauteur possible et que son contenu s'adapte */
+.chambre-card {
+    height: 350px; /* Hauteur fixe pour toutes les cartes */
+    display: flex;
+    flex-direction: column; /* Permet au contenu de la carte de se répartir uniformément */
+    background-color: #fff; /* Optionnel : couleur de fond */
+    border: 1px solid #ddd; /* Optionnel : bordure pour les cartes */
+    border-radius: 10px; /* Optionnel : bords arrondis */
+    overflow: hidden; /* Cache tout contenu qui dépasse */
+}
+/* Card container pour garantir que chaque carte a la même hauteur                  height: 100%;*/
+
+.text-danger {
+    color: red !important; /* Forcer la couleur rouge */
+}
+
+.text-decoration-line-through {
+    text-decoration: line-through !important; /* Forcer la barre traversante */
+}
+
+
+
+
+/* La section body de la carte prend tout l'espace restant */
+.card-body {
+    flex: 1;
+}
+
+/* Footer de la carte pour garder le bouton au bas */
+.card-footer {
+    display: flex;
+    justify-content: center; /* Centre le bouton */
+    padding: 1rem; /* Espace autour du bouton */
+    text-align: center; /* Centre le texte dans le footer */
+}
+
+    .card-footer .btn {
+        width: 100%; /* Le bouton prend toute la largeur */
+        max-width: 250px; /* Taille maximale du bouton */
+        margin: 0 auto; /* Centrer le bouton horizontalement */
+    }
+
+/* S'assurer que les cartes sont uniformes */
+.card {
+    height: 100%;
+}
+
+/* Assurez-vous que le contenu de la carte est bien structuré */
+.card-body {
+    flex: 1; /* Permet à la section du corps de prendre tout l'espace restant */
+    padding: 15px; /* Espacement interne */
+    display: flex;
+    flex-direction: column; /* Aligne le texte verticalement */
+}
+
+/* Ajuster l'image dans la carte */
+.card-img-top {
+    height: 200px; /* Limite la hauteur de l'image */
+    object-fit: cover; /* L'image se découpe pour s'adapter à la taille sans déformation */
+    width: 100%; /* Assure que l'image occupe toute la largeur de la carte */
+}
+
+/* Le bouton doit toujours se trouver à la fin de la carte */
+.card-footer {
+    margin-top: auto; /* Cela pousse le bouton au bas de la carte */
+    text-align: center; /* Centrer le bouton */
+    padding: 10px;
+}
+
+/* Assurez-vous que les colonnes de cartes sont flexibles et avec un espacement */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux cartes de se répartir sur plusieurs lignes si nécessaire */
+    gap: 20px; /* Espacement entre les cartes */
+}
+
+/* Adaptation des tailles des cartes en fonction de l'écran */
+.col-md-4 {
+    flex: 1 1 30%; /* Chaque carte occupe 30% de l'espace sur un écran moyen */
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Bouton à la fin de chaque carte */
+.card-footer .btn {
+    width: 100%; /* Le bouton prend toute la largeur de la carte */
+}
+
+/* Media queries pour les petits écrans */
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 1 1 45%; /* Sur les écrans plus petits, les cartes prennent plus de place */
+    }
+}
+
+@media (max-width: 480px) {
+    .col-md-4 {
+        flex: 1 1 100%; /* Sur les petits écrans, chaque carte occupe toute la largeur */
+    }
+}
